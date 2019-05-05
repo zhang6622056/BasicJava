@@ -77,12 +77,6 @@ public class LambdaBasic {
 
         //-MethodReference引用为全局变量的情况
         //printUtil.print("kkk");
-
-
-
-
-
-
     }
 
 
