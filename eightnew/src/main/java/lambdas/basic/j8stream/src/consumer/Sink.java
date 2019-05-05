@@ -10,17 +10,8 @@ public interface Sink<T> extends Consumer<T> {
     default boolean cancellationRequested() {return false;}
 
 
+
     default void accept(int value){throw new IllegalStateException("called wrong accept method");}
     default void accept(long value){throw new IllegalStateException("called wrong accept method");}
     default void accept(double value){throw new IllegalStateException("called wrong accept method");}
-
-
-
-
-
-
-
-
-
-
 }
