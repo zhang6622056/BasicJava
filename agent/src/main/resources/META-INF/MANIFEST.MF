@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Premain-Class: premain.Premain
+Archiver-Version: Plexus Archiver
+Built-By: nero
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_201
+Agent-Class: premain.AgentMain
+Main-Class: premain.Main
+
+
