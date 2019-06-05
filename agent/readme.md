@@ -10,8 +10,10 @@
     Built-By: nero
     Created-By: Apache Maven 3.6.0
     Build-Jdk: 1.8.0_201
-    Main-Class: premain.Main
+    Main-Class: Main
     Premain-Class: premain.Premain
+    Agent-Class: agentmain.AgentMain
+
 
 
 ### 启动脚本：
@@ -21,5 +23,32 @@
     -jar : 指明main方法入口，这个指明的main项目的jar
     
     
-### Instrumentation对象
+### AgentMain与PreMain的区别
+    PreMain是在main函数执行之前运行的，具体的应用场景暂时不明 TODO
+    PreMain是在main函数执行之后运行的，具体的应用场景暂时不明 TODO
+        
+ 
+### agentMain客户端
+        /****
+         *
+         *
+         * 将带有agentmain的jar attch到已经运行的进程中。前期是jar中含有agentmain类，并且manifest要指明
+         * @param args
+         * @throws IOException
+         * @throws AgentLoadException
+         * @throws AgentInitializationException
+         * @throws AttachNotSupportedException
+         */
+        public static void main(String[] args) throws IOException, AgentLoadException, AgentInitializationException, AttachNotSupportedException {
+            com.sun.tools.attach.VirtualMachine vm = VirtualMachine.attach("11385");
+            vm.loadAgent("/Users/nero/code/githubmyself/BasicJava/agent/target/agent-1.0-SNAPSHOT.jar");
+        }   
+    
+    
+    
+
+
+
+
+
 

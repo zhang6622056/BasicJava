@@ -3,6 +3,6 @@ Archiver-Version: Plexus Archiver
 Built-By: nero
 Created-By: Apache Maven 3.6.0
 Build-Jdk: 1.8.0_201
-Main-Class: premain.Main
+Main-Class: Main
 Premain-Class: premain.Premain
-
+Agent-Class: agentmain.AgentMain
