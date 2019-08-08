@@ -11,7 +11,14 @@
 
 
 
-
+    <dependencies>
+        <!--打印java对象头信息-->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.8</version>
+        </dependency>
+    </dependencies>
 
 
 
