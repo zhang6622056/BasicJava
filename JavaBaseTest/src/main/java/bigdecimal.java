@@ -11,7 +11,15 @@ public class bigdecimal {
 
 
 
-        System.out.println(BigDecimal.valueOf(300).multiply(BigDecimal.valueOf(100).abs()).remainder(BigDecimal.valueOf(3)));
+       // System.out.println(BigDecimal.valueOf(300).multiply(BigDecimal.valueOf(100).abs()).remainder(BigDecimal.valueOf(3)));
+
+
+
+
+        int a = 300;
+        Integer b = new Integer(300);
+        System.out.println(a == b);
+
 
     }
 

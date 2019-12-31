@@ -43,12 +43,13 @@ public class FutureTest {
     public void testFutureTask(){
         FutureTask<String> futureTask = new FutureTask<String>(initCallAble());
         try {
-            futureTask.run();
+            new Thread(futureTask).start();
 
-            for (;;){
-                System.out.println("DONE:"+futureTask.isDone());
-                System.out.println(futureTask.get(3l, TimeUnit.SECONDS));
-            }
+
+            System.out.println("线程继续执行了。。。");
+            System.out.println(futureTask.get(3l, TimeUnit.SECONDS));
+            System.out.println("DONE:"+futureTask.isDone());
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -64,6 +65,7 @@ public class FutureTest {
         return new Callable<String>() {
             @Override
             public String call() throws Exception {
+                System.out.println("====================");
                 Thread.currentThread().sleep(2000l);
                 return "Callable执行完毕！！";
             }

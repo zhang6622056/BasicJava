@@ -10,7 +10,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 
-
 /****
  *
  * 模拟了锁，实现了从轻量级到重量级锁的变更。
@@ -35,7 +34,14 @@ public class FirstDisplay {
 
 
 
-
+    /**
+     *
+     * ClassLayout.parseInstance 转换为类对象头结构
+     * @author Nero
+     * @date 2019-08-09
+     * *@param: args
+     * @return void
+     */
     public static void main(String[] args) {
 
         System.out.println(ClassLayout.parseInstance(a).toPrintable());

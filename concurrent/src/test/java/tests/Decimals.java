@@ -13,12 +13,7 @@ public class Decimals {
     public void test(){
         BigDecimal c = new BigDecimal(1000);
         BigDecimal a = c.divide(new BigDecimal(1), 2, RoundingMode.HALF_UP);
-
         System.out.println(a);
-
-
-
-
     }
 
 
