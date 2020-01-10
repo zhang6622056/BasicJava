@@ -45,32 +45,8 @@ public class Chapter14 {
 
             }
         });
-
-
-
-
         t1.start();
         t2.start();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 

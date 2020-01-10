@@ -58,6 +58,11 @@ public class NettyRemotingServer {
             channelPipeline.addLast("",handler);
             channelPipeline.addLast("",handler);
 
+
+
+
+
+
         }
     }
 

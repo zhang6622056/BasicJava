@@ -1,14 +1,26 @@
 package com;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Start {
 
-
-    public static void main(String[] args) {
-        System.out.println("start....");
-
+    private ReentrantLock reentrantLock = new ReentrantLock();
+    int value = 1;
 
 
+    public void addOne(){
+        reentrantLock.lock();
+        try{
+            value += 1;
+        }finally{
+            reentrantLock.unlock();
+        }
     }
+
+
+
+
+
 
 
 }

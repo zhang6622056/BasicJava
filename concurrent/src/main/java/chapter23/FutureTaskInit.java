@@ -17,7 +17,7 @@ import java.util.concurrent.FutureTask;
  * @author Nero
  * @date 2019-07-17
  * *@param: null
- * @return 
+ * @return
  */
 public class FutureTaskInit {
 

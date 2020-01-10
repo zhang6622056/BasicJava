@@ -31,7 +31,6 @@ public class AtomicIntegerTest {
 
         public Worker(Runnable task) {
             this.task = task;
-            this.thread =
         }
 
 
