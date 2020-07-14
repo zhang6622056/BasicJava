@@ -1,10 +1,10 @@
 package agentmain.client;
 
-import com.sun.tools.attach.AgentInitializationException;
-import com.sun.tools.attach.AgentLoadException;
-import com.sun.tools.attach.AttachNotSupportedException;
-import com.sun.tools.attach.VirtualMachine;
-import java.io.IOException;
+//import com.sun.tools.attach.AgentInitializationException;
+//import com.sun.tools.attach.AgentLoadException;
+//import com.sun.tools.attach.AttachNotSupportedException;
+//import com.sun.tools.attach.VirtualMachine;
+//import java.io.IOException;
 
 
 /***
@@ -24,10 +24,10 @@ public class AgentMainClient {
      * @throws AgentInitializationException
      * @throws AttachNotSupportedException
      */
-    public static void main(String[] args) throws IOException, AgentLoadException, AgentInitializationException, AttachNotSupportedException {
-        com.sun.tools.attach.VirtualMachine vm = VirtualMachine.attach("11385");
-        vm.loadAgent("/Users/nero/code/githubmyself/BasicJava/agent/target/agent-1.0-SNAPSHOT.jar");
-    }
+//    public static void main(String[] args) throws IOException, AgentLoadException, AgentInitializationException, AttachNotSupportedException {
+//        com.sun.tools.attach.VirtualMachine vm = VirtualMachine.attach("11385");
+//        vm.loadAgent("/Users/nero/code/githubmyself/BasicJava/agent/target/agent-1.0-SNAPSHOT.jar");
+//    }
 
 
 }

@@ -9,8 +9,6 @@
     <version>1.0-SNAPSHOT</version>
 
 
-
-
     <dependencies>
         <!--打印java对象头信息-->
         <dependency>
@@ -19,22 +17,28 @@
             <version>0.8</version>
         </dependency>
 
-
-
-
         <!--学习java的spi，类加载使用-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.38</version>
         </dependency>
-
-
-
-
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 
