@@ -92,10 +92,6 @@ public class Trans implements ClassFileTransformer {
      */
     private byte[] transformByByteBuddy(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer){
         ByteBuddy byteBuddy = new ByteBuddy();
-
-
-
-
         return null;
     }
 
